@@ -1,8 +1,8 @@
-<div>
+<div class="login-container">
   <h1>Welcome Back</h1>
   <h3>Login Here</h3>
   <form name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
-    <div>
+    <div class="form-group">
       <label for="username">Email</label>
       <input
         required
@@ -10,7 +10,8 @@
         name="username"
         [(ngModel)]="form.username"
         #username="ngModel">
-
+    </div>
+    <div class="form-group">
       <label for="password">Password</label>
       <input
         type="password"
@@ -19,6 +20,6 @@
         required
         #password="ngModel">
     </div>
-    <button>Submit</button>
+    <button class="submit-btn">Submit</button>
   </form>
 </div>
